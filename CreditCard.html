@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Recreation E-Commerce</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
+		<!-- js -->
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/filter.js"></script>
+		<script src="js/render.js"></script>
+		<script type="text/javascript">//<![CDATA[ 
+		$(window).load(function(){
+		/**
+		 * File: js/showhide.js
+		 * Author: design1online.com, LLC
+		 * Purpose: toggle the visibility of fields depending on the value of another field
+		 **/
+		$(document).ready(function () {
+			 $("#parentPermission").hide();
+		   // toggleFields(); //call this first so we start out with the correct visibility depending on the selected form values
+			//this will call our toggleFields function every time the selection value of our underAge field changes
+			$("#sub").live('click',function () {
+			//   if ($("#age").val() == "Adil"){
+				$("#age").hide();
+				$("#age2").hide();
+				$("#a").hide();
+				$("#a2").hide();
+				$("#sub").hide();
+				$("#parentPermission").show();
+				$("#parentPermission").update($("#age").val());
+			});
+
+		});
+		})
+		</script>
+		<!-- //js -->
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+				function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- //for-mobile-apps -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!-- start-smoth-scrolling -->
+<style>
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+table ul{
+	list-style-type:none;
+}
+
+<!-- live chat -->
+body {height:3000px}
+
+.chat-box {
+  font:normal normal 11px/1.4 Tahoma,Verdana,Sans-Serif;
+  color:#333;
+  width:200px; /* Chatbox width */
+  border:1px solid #344150;
+  border-bottom:none;
+  background-color:white;
+  position:fixed;
+  right:10px;
+  bottom:0;
+  z-index:9999;
+  -webkit-box-shadow:1px 1px 5px rgba(0,0,0,.2);
+  -moz-box-shadow:1px 1px 5px rgba(0,0,0,.2);
+  box-shadow:1px 1px 5px rgba(0,0,0,.2);
+}
+
+.chat-box > input[type="checkbox"] {
+  display:block;
+  margin:0 0;
+  padding:0 0;
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  width:100%;
+  height:26px;
+  z-index:4;
+  cursor:pointer;
+  opacity:0;
+  filter:alpha(opacity=0);
+}
+
+.chat-box > label {
+  display:block;
+  height:24px;
+  line-height:24px;
+  background-color:#344150;
+  color:white;
+  font-weight:bold;
+  padding:0 1em 1px;
+}
+
+.chat-box > label:before {content:attr(data-collapsed)}
+
+.chat-box .chat-box-content {
+  padding:10px;
+  display:none;
+}
+
+.chat-box > input[type="checkbox"]:hover + label {background-color:#404D5A}
+
+.chat-box > input[type="checkbox"]:checked + label {background-color:#212A35}
+.chat-box > input[type="checkbox"]:checked + label:before {content:attr(data-expanded)}
+.chat-box > input[type="checkbox"]:checked ~ .chat-box-content {display:block}
+<!-- // end of live chat style -->
+<!-- Service style -->
+#service a{
+	color: #029199;
+	text-decoration:none;
+}
+
+#service a:hover{
+	color: #029199;
+	text-decoration: underline;
+}
+#service a li{
+	color: #029199;
+	text-decoration:none;
+}
+<!-- End of Service style -->
+<!-- Contact footer style-->
+.footer-right-text{
+	color: #ffffff;
+	text-decoration:none;
+}
+
+.Contactus{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.Private{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.Trade{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+<!-- //End of Contact footer style -->
+<!-- divide page and side -->
+   #content {width: inherit; height: inherit; margin: 0; padding:0;}
+   #righ { margin-right: 10%; width: 20em; height: 10em; float: right}
+   #lef { margin-right: 60%; height: 80%;}
+<!-- // End of divid page and side -->
+<!-- non border table -->
+.nbtable {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.nbtable > thead > tr > th,
+.nbtable > tbody > tr > th,
+.nbtable > tfoot > tr > th,
+.nbtable > thead > tr > td,
+.nbtable > tbody > tr > td,
+.nbtable > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px none transparent;
+}
+
+<!-- // none border table -->
+</style>
+</head>
+
+<body>
+<!-- header -->
+	<div class="header">
+	<div class="container">
+		<div class="header-part">
+			<div class="head-logo">
+				<a href="index.html"><img src="images/logo.png" alt=" "></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"><img src="images/menu.png" alt="" /></span>
+					<ul class="nav1">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Ecom.html" class="scroll">Shop</a></li>
+						<li><a href="Support.html" class="scroll">Support</a></li>
+								<label id="parentPermission">
+									 Welcome Michael Liu!
+								</label>
+
+					</ul>
+					<script> 
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							
+					</script>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<hr class="style-six">
+<!-- //header -->
+<!-- panel -->
+<div class="container">
+	<table id="panel" class="panel">
+		<tr>
+		<td>
+		<h4 style="color:#c4c4c4"> Customer Information</h2>
+		</td>
+		<td>
+		<h4 style="margin-left: 6em"> Payment</h2>
+		</td>
+		<td> 
+		<h4 style="margin-left: 6em; color:#c4c4c4"> Review</h2>
+		</td>
+		</tr>
+		</table>
+</div>
+<!-- //End of panel -->
+<!-- sider -->
+<div id='righ'> 
+		<nav>
+		<h4>Order overview</h4>
+		<table class="table">
+			<tr>
+			<td>
+				<table class="carousel">
+				<tr>
+				<td>
+				<table class="carousel">
+					<tr>
+					<td> 2014 Enduro 550 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+					<td> $7609.99</td>
+					</tr>
+					<tr>
+					<td> Quantity: 1</td>					</tr>
+					<tr>
+					<td>Ship it</td>
+					</tr>
+				</table>
+				</td>
+				</tr>
+<!--
+				<ul>
+					<li>2014 Enduro 550</li> 
+					<li>Quantity: 1 <br></li>
+					<li>Ship it</li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<li>$7609.99</li>
+				</td>
+				</tr>
+-->				</table>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<table class="carousel">
+				<tr>
+				<td>
+				<table class="carousel">
+					<tr>
+					<td> Shipping </td>
+					<td> $9.99</td>
+					</tr>
+					<tr>
+					<td> <br>Subtotal:* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+					<td> $7600.00</td>
+					</tr>
+					<tr>
+					<td><h4>Total:</h4></td>
+					<td><h4>$7609.99</h4></td>
+					</tr>
+					<tr>
+					<td>*:</td>
+					<td>before applicable taxes</td>
+					</tr>
+				</table>
+				</td>
+				</tr>
+				</table>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<table class="carousel">
+				<tr>
+				<td>
+				<table class="carousel">
+					<tr>
+					<td> Need help? </td>
+					</tr>
+					<tr>
+					<td> Call 1-877-696-5858</td>
+					</tr>
+					<tr>
+					<td>Order#: 10185017461</td>
+					</tr>
+				</table>
+				</td>
+				</tr>				
+				</table>
+			</td>
+			</tr>
+		</table>
+		</nav>
+</div>
+<!-- //End of sider -->
+<!-- Shipping Info -->
+<div class="container">
+		<div id="lef">
+		<table class="carousel">
+			<tr>
+			<td>
+				<h2> Pay with Credit Card </h2>
+			</td>
+			</tr>
+		</table>
+		<table class="table">
+			<tr>
+			<td>
+				<h4> Enter your billing information</h4>
+				<form action="demo_form.asp">
+					<table class="nbtable">
+						<tr>
+						<td>
+							Country: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="Country" size="40">
+						</td>
+						</tr>
+						<tr>
+						<td>
+							First Name on card: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="FirstName" size="40">
+						</td>
+						</tr>
+						<tr>
+						<td>
+							Last Name on card: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="LastName" size="40">
+						</td>
+						</tr>
+						<tr>
+						<td>
+							Credit Card Number: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="Crednum" size="40">
+						</td>
+						</tr>
+						<tr>
+						<td>
+							Payment Type: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+							<img src="images/VisaMCAmexPP.jpg" alt=" " />
+						</td>
+						</tr>
+						<tr>
+						<td>
+							Expiration Date:
+						</td>
+						<td>
+								<input type="password" name="month" maxlength="2" size="2" placeholder="mm">
+								/
+								<input type="password" name="year" maxlength="2" size="2" placeholder="yy">
+						</td>
+						</tr>
+						<tr>
+						<td> CSC</td>
+						<td>
+								<input type="password" name="Csc" maxlength="3" size="3">
+								&nbsp&nbsp&nbsp&nbsp
+								<a href="https://www.paypal.com/ao/cgi-bin/merchantpaymentweb?cmd=xpt/Help/popup/CVVInfoPopC-outside" id="service" style="color:#029199">  what's this?</a>
+						</td>
+							
+						</tr>
+					</table>
+				</form>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<h4>Billing Address</h4>
+				<form action="demo_form.asp">
+					<table class="nbtable">
+						<tr>
+						<td>
+							Billing Address Line 1: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="BA1" size="40">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Billing Address Line 2: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="BA2" size="40">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							City: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="City" size="40">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							States/Provinces: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="Prov" size="40">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							ZIP Code: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="zip" size="40">
+						</td>
+					</tr>					
+					<tr>
+						<td>
+							Phone Number: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="phone" size="40">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Email: &nbsp&nbsp&nbsp&nbsp
+						</td>
+						<td>
+								<input type="text" name="email" size="40">
+						</td>
+					</tr>
+					</table>
+				</form>
+			</td>
+			</tr>
+		</table>
+	<!--  Credit Info -->
+<!--		<tr>
+		<td>
+		<table class="table">
+			<tr>
+			<td>
+				<h2> Credit Info </h2>
+				<ul>
+				<li>
+				<form>
+					<input type="radio" name="credin" value="credcard" /> <img src="images/IconCardType_visa.png" alt=" " />
+				</form>
+				</li>
+				<li>
+				<br>
+				<form>
+					<input type="radio" name="credin" value="master" /><img src="images/IconCardType_mastercard.png" alt=" " />
+				</form>
+				</li>
+				<li>
+				<br>
+				<form>
+					<input type="radio" name="credin" value="american" /><img src="images/IconCardType_amex.png" alt=" " />
+				</form>
+				</li>
+				</ul>
+			</td>
+			</tr>
+-->
+			<!-- // End Credit Info -->
+<!--			<td>
+			<tr>
+				<form action="demo_form.asp">
+				
+				<table class="carousel">
+			<tr>
+			<td>
+				<h5>First name</h5>
+				<input type="text" name="FirstName" size="50"><br>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<h5>Last name</h5>
+				<input type="text" name="LastName" size="50"><br>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<h5>Address 1</h5>
+				<input type="text" name="Address1" size="50"><br>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<h5>Address 2(Optional)</h5>
+				<input type="text" name="Address2" size="50"><br>
+			</td>
+			</tr>
+			<tr>
+			<tr>
+			<td>
+				<h5>City</h5>
+				<input type="text" name="City" size="50"><br>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<table class="carousel">
+				<tr>
+				<td>
+				<h5>Province/Territory</h5>
+				<input type="text" name="Province"><br>
+				</td>
+				<td>
+				<div style="margin-left:4em">
+				<h5>Country</h5>
+				<input type="text" name="Country"><br>
+				</div>
+				</td>
+				</tr>
+				</table>
+				<br>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<table class="carousel">
+				<tr>
+				<td>
+				<h5>Zip/Postal code</h5>
+				<input type="text" name="postcode"><br>
+				</td>
+				<td>
+				<div style="margin-left:4em">
+				<h5>Phone number</h5>
+				<input type="text" name="phone#"><br>
+				</div>
+				</td>
+				</tr>
+				</table>
+		<!-- check box -->
+<!--
+		<form>
+			<div class="tags">
+				<label>
+					<input type="checkbox" rel="basic" />
+					Use shipping address for billing address
+				</label>
+			</div>
+		</form>
+-->
+		<!-- // End of check box -->
+			<br>
+			</td>	
+			</tr>
+			</table>
+		</form>
+</div>
+<!-- //End of Shipping Info -->	
+<!-- Shipping method -->
+	<div id="blog" class="blog">
+		<table id="table" class="table">
+			<tr>
+			<td>
+				<ul>
+				<li style="font-size:18px"> Shipping Method
+				</li>
+				<li><br></li>
+				<li>
+				<form>
+					<input type="radio" name="shipping" value="ground" checked /> <b>Ground(3-7 days) - $9.99 USD</b>
+					<br>
+					<input type="radio" name="shipping" value="express" /><b> Express(1-3 days) - $15.99 USD</b>
+				</form>
+				</li>
+				</ul>
+			</td>
+			<td> 
+				<ul>
+					<li>Shipping: </li>
+					<li>Subtotal:*</li>
+					<br/>
+					<li style="color:#c4c4c4"> *before applicable taxes</li>
+				<ul>
+			</td>
+			<td>
+				<ul>
+					<li>$9.99</li>
+					<li>$7609.99</li>
+				</ul>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			</tr>
+		</table>
+	</div>
+<!-- // End shipping -->
+<!-- payment -->
+	<div class="blog">
+		<table class="table">
+		<tr>
+		<td>
+		<img src="images/verizon_logo.jpg" alt=" ">
+		</td>
+		<td>
+		<img src="images/VisaMCAmexPP.jpg" alt=" ">
+		</td>
+		<td>
+			<form>
+			<input name="submitmsg" type="button" onClick="parent.location='Review.html'" value="Next" /> </a>
+			</form>
+		</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<!-- //End payment -->
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="footer-left">
+			<div class="footer-left-text">
+				<p>Design by CREO		© 2015 Recreation USA</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="footer-right">
+			<ul>
+				<li><a href="#" class="Private">Privacy and Cookies</a></li>
+				<li><a href="#" class="Contactus">Contact us</li></a>
+				<a href="#" class="Trade"><li>Trademarks</li></a>
+				<li><a href="#" class="facebook"></li></a>
+				<li><a href="#" class="twitter"></li></a>
+				<li><a href="#" class="dribble"></li></a>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	</div>
+<!-- //End footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
+	

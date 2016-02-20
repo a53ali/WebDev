@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Recreation E-Commerce</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/filter.js"></script>
+		<script src="js/render.js"></script>
+		<script type="text/javascript">//<![CDATA[ 
+		$(window).load(function(){
+		/**
+		 * File: js/showhide.js
+		 * Author: design1online.com, LLC
+		 * Purpose: toggle the visibility of fields depending on the value of another field
+		 **/
+		$(document).ready(function () {
+			 $("#parentPermission").hide();
+		   // toggleFields(); //call this first so we start out with the correct visibility depending on the selected form values
+			//this will call our toggleFields function every time the selection value of our underAge field changes
+			$("#sub").live('click',function () {
+			//   if ($("#age").val() == "Adil"){
+				$("#age").hide();
+				$("#age2").hide();
+				$("#a").hide();
+				$("#a2").hide();
+				$("#sub").hide();
+				$("#parentPermission").show();
+				$("#parentPermission").update($("#age").val());
+			});
+
+		});
+		})
+		</script>
+		<!-- //js -->
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+				function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- //for-mobile-apps -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!-- start-smoth-scrolling -->
+		
+<style>
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+table ul{
+	list-style-type:none;
+}
+
+<!-- live chat -->
+body {height:3000px}
+
+.chat-box {
+  font:normal normal 11px/1.4 Tahoma,Verdana,Sans-Serif;
+  color:#333;
+  width:200px; /* Chatbox width */
+  border:1px solid #344150;
+  border-bottom:none;
+  background-color:white;
+  position:fixed;
+  right:10px;
+  bottom:0;
+  z-index:9999;
+  -webkit-box-shadow:1px 1px 5px rgba(0,0,0,.2);
+  -moz-box-shadow:1px 1px 5px rgba(0,0,0,.2);
+  box-shadow:1px 1px 5px rgba(0,0,0,.2);
+}
+
+.chat-box > input[type="checkbox"] {
+  display:block;
+  margin:0 0;
+  padding:0 0;
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  width:100%;
+  height:26px;
+  z-index:4;
+  cursor:pointer;
+  opacity:0;
+  filter:alpha(opacity=0);
+}
+
+.chat-box > label {
+  display:block;
+  height:24px;
+  line-height:24px;
+  background-color:#344150;
+  color:white;
+  font-weight:bold;
+  padding:0 1em 1px;
+}
+
+.chat-box > label:before {content:attr(data-collapsed)}
+
+.chat-box .chat-box-content {
+  padding:10px;
+  display:none;
+}
+
+.chat-box > input[type="checkbox"]:hover + label {background-color:#404D5A}
+
+.chat-box > input[type="checkbox"]:checked + label {background-color:#212A35}
+.chat-box > input[type="checkbox"]:checked + label:before {content:attr(data-expanded)}
+.chat-box > input[type="checkbox"]:checked ~ .chat-box-content {display:block}
+<!-- // end of live chat style -->
+<!-- Service style -->
+#service a{
+	color: #029199;
+	text-decoration:none;
+}
+
+#service a:hover{
+	color: #029199;
+	text-decoration: underline;
+}
+#service a li{
+	color: #029199;
+	text-decoration:none;
+}
+<!-- End of Service style -->
+<!-- Contact footer style-->
+.footer-right-text{
+	color: #ffffff;
+	text-decoration:none;
+}
+
+.Contactus{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.Private{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.Trade{
+	color:#ffffff;
+	text-decoration:none;
+}
+h4{
+	text-align:left;
+}
+
+#slideout_inner textarea {
+    width: 150px;
+    height: 80px;
+    margin-bottom: 6px;
+}
+
+<!-- //End of Contact footer style -->
+
+</style>
+
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+	<div class="container">
+		<div class="header-part">
+			<div class="head-logo">
+				<a href="index.html"><img src="images/logo.png" alt=" "></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"><img src="images/menu.png" alt="" /></span>
+					<ul class="nav1">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Ecom.html" >Shop</a></li>
+						<li><a href="Support.html">Support</a></li>
+						<label id="a">Username
+									<input name="age" id="age" type="text" size="10">
+								</label>
+						      <label id="a2">Password
+									<input name="age2" id="age2" type="password" size="10">
+								</label>
+								<label id="parentPermission">
+									 Welcome Michael Liu!
+								</label>
+								<label align="center">
+									<button id="sub">
+									Login
+									</button>
+							</label>
+					</ul>
+					<script> 
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							
+					</script>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<hr class="style-six">
+<!-- //header -->
+
+<!-- direction -->
+<div class="container">
+<div class="grid">
+	<a href="index.html"> Home </a>
+	<span>&gt</span>
+	Support
+</div>
+</div>
+<!-- Content -->
+<div class="container">
+	<h2>Sales and Support</h2>
+	<br/>
+
+
+	<div id="blog" class="blog">
+		<table id="service" class="table">
+		<tr>
+		<td>
+			<div class="basic"> 
+				<img src="images/info.jpg"  alt=" " />	
+			</div>
+		<td>
+				<td>
+		<td>
+				<td>
+			</div>
+		<td>
+		</tr>
+		</table>
+		<table id="service" class="table">
+		<tr>
+		<td>
+			<h4> Self-service/Access your account</h4>
+			<ul>
+				<a href="#"><li> My product status</li></a>
+				<a href="#"><li> Find my product key</li></a>
+				<a href="#"><li> Reset password</li></a>
+				<a href="#"><li> Update account information</li></a>
+				<a href="#"><li> Previous order history and order status</li></a>
+			</ul>
+		</td>
+		<td>
+			<h4> Help/FAQ</h4>
+			<ul>
+				<a href="#"><li> Application download instructions</li></a>
+				<a href="#"><li> Orders and shipping</li></a>
+				<a href="#"><li> Refund/Return</li></a>
+				<a href="#"><li> FAQ</li></a>
+				<a href="#"><li> Live Support</li></a>
+			</ul>
+		</td>
+		
+		<td> 
+			<h4> <a name="contact"></a>Contact US</h4>
+			<ul> 
+				<li> Recreation USA Hours of Operation:</li>
+				<li> 10:00 - 19:00(ET), Monday - Friday</li>
+				<br>
+				<li> Recreation USA Store Sales and Customer Support:</li>
+				<li> 1-877-696-4567(1-877-MY-RECUSA-STORE)</li>
+				<br/>
+				<li> Technical Support:</li>
+				<li> 1-800-642-5858</li>
+				<br/>
+				<a href="#"><li> Live Support</li></a>
+			</ul>
+		</td>	
+		</tr>
+		</table>
+	</div>
+</div>
+<!-- live chat -->
+<div class="chat-box">
+    <input type="checkbox" />
+    <label data-expanded="Close Chatbox" data-collapsed="Open Chatbox"></label>
+    <div class="chat-box-content">How can we help you today?
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+	    <!-- send -->
+		<form name="message" action="">
+        <input name="usermsg" type="text" id="usermsg" size="20" />
+        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+		</form>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+		// jQuery Document
+		$(document).ready(function(){
+ 
+		});
+		</script>
+		<!-- end of send -->
+		</div>
+	</div>
+<!-- // end of live chat -->
+
+<!-- More content -->
+<div class="container">
+	<div id="blog" class="blog">
+		<table class="table">
+		<tr>
+		<td>
+			<h4> Sign up for Recreation USA and special offer emails</h4>
+			
+		<!-- sign up -->
+		<form name="message" action="">
+        <input name="usermsg" type="text" id="usermsg" size="40" placeholder="Enter your email here..."/>
+        <input name="submitmsg" type="submit"  id="submitmsg" value="Sign up" />
+		</form>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+		<script type="text/javascript"> 
+				// jQuery Document
+		$(document).ready(function(){
+ 
+		});
+		</script>
+		<!-- End of sign up -->
+		<!-- check box -->
+		<form>
+			<div class="tags">
+				<label>
+					<input type="checkbox" rel="basic" />
+					I'd like to get email from Recreation USA with special offers and information
+				</label>
+			</div>
+		</form>		
+		<!-- // End of check box -->
+		</td>
+		</tr>
+		</table>
+<!-- // End of More content -->
+<!-- Even more content -->
+		<table id="service" class="table">
+		<tr>
+		<td>
+			<h4> Shop Categories</h4>
+			<ul>
+				<a href="#"><li> Dirt Bikes</li></a>
+				<br/>
+				<a href="#"><li> Bike Parts</li></a>
+			</ul>
+		</td>
+		<td> 
+			<h4> Account</h4>
+			<ul> 
+				<a href="#"><li> View account</li></a>
+				<br/>
+				<a href="#"><li> Order history</li></a>
+				<br/>
+				<a href="#"><li> Digital content</li></a>
+			</ul>
+		</td>
+		<td>
+			<h4> About Us</h4>
+			<ul>
+				<a href="#"><li>Sitemap</li></a>
+				<br/>
+				<a href="#"><li>Careers</li></a>
+				<br/>
+				<a href="#"><li>Retail store locations</li></a>
+			<ul>
+		</td>	
+		<td>
+			<h4> Help</h4>
+			<ul>
+				<a href="#"><li> Support</li></a>
+				<br/>
+				<a href="#"><li> Orders</li></a>
+				</br>
+				<a href="#"><li> Returns</li></a>
+				<br/>
+				<a href="#"><li> All help topics</li></a>
+				<br/>
+				<a href="#"><li> FAQ</li></a>
+				
+			</ul>
+		</td>
+		</tr>
+		</table>		
+<!-- // End of Even more content -->
+
+
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="footer-left">
+			<div class="footer-left-text">
+				<p>Design by CREO		© 2015 Recreation USA</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="footer-right">
+			<ul>
+				<li><a href="#" class="Private">Privacy and Cookies</a></li>
+				<li><a href="#contact" class="Contactus">Contact us</li></a>
+				<a href="#" class="Trade"><li>Trademarks</li></a>
+		<!--		<li><a href="#" class="Contactus">Privacy and Cookies</a></li>
+				<a href="#" class="Contactus"><li>Trademarks</li></a>
+		-->		<li><a href="#" class="facebook"></li></a>
+				<li><a href="#" class="twitter"></li></a>
+				<li><a href="#" class="dribble"></li></a>
+			</ul>
+		</div>
+			<!--<ul>
+				<a href="#" class="Contactus"><li>© 2015 Recreation USA</li></a>
+			</ul>-->
+		<div class="clearfix"> </div>
+	</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+	</script>
+<!-- //here ends scrolling icon -->
+<div id="slideout">
+    <img src="http://img.usabilitypost.com.s3.amazonaws.com/1104/css_slideout/feedback.png" alt="Feedback" />
+    <div id="slideout_inner">
+        <form>
+            <textarea></textarea>
+            <label>Email:
+				<input type="text" style="width: 100px; padding: 2px; border: 1px solid black"/>
+			</label>
+            <input type="submit" value="Send" ></input>
+        </form>
+    </div>
+</div>
+</body>
+</html>
