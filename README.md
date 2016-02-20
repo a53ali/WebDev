@@ -1,7 +1,9 @@
 # WebDev    
 
 Website:http://a53ali.github.io/WebDev/Support.html
+
 Course: CS 490 Information Systems Management
+
 Objective: This course is intended to emphasize the integration of business and technical considerations in the design, implementation and management of information systems. Students will be introduced to various business and management information systems, and the environment in which they function. The students will learn the theory and practical application of these systems, as well as their implementation in the business community.
 
 Assignment: Build a prototype E-commerce Website.
