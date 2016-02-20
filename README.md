@@ -1,6 +1,6 @@
 # WebDev    
 
-Website:http://a53ali.github.io/WebDev/Support.html
+Website:http://a53ali.github.io/WebDev/
 
 Course: CS 490 Information Systems Management
 
